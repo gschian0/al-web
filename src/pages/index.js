@@ -5,8 +5,8 @@ import styles from "../styles/Home.module.css";
 import Webcam from 'react-webcam';
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-const cameraWidth = 720;
-const cameraHeight = 720;
+const cameraWidth = 250;
+const cameraHeight = 250;
 const aspectRatio = cameraWidth / cameraHeight;
 
 const videoConstraints = {
@@ -111,8 +111,8 @@ export default function Home() {
           <Image
             src={image}
             alt="input"
-            width={200}
-            height={200}
+            width={250}
+            height={250}
           />
         </div>
       )}
@@ -127,8 +127,8 @@ export default function Home() {
                 
                 src={prediction.output[prediction.output.length - 1]}
                 alt="output"
-                width={200}
-                height={200}
+                width={500}
+                height={500}
               />
             </div>
           )}
